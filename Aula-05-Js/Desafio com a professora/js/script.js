@@ -152,3 +152,37 @@ for (let i= 0; i < idades.length; i++) {
         maior= idades[i]
     }
 } console.log (maior); */
+
+// 🚀 Desafio 10:
+
+/* let precos= [10.50, 25.00, 8.99, 12.75];
+
+let menor=precos[0];
+
+for (i=0; i < precos.length; i++) {
+    if (precos[i] < menor) {
+        menor=precos[i]
+    }
+} console.log (menor) */
+
+// 🏆 Projeto Final da Aula:
+
+/* let jogadores= [];
+let pontuacao= [];
+
+for (let i= 0; i < 3; i++) {
+
+    let nome= prompt ("Digite o seu nickname:");
+    let pontos= Number (prompt ("Digite a sua pontuação:"));
+
+    jogadores.push(nome);
+    pontuacao.push(pontos);
+}
+
+let ranking= "Ranking dos jogadores: "
+
+for (let i= 0; i < jogadores.length; i++) {
+    ranking += jogadores[i] + " - " + pontuacao[i] + " pontos. "
+}
+
+alert (ranking); */
