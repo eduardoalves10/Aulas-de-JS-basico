@@ -140,3 +140,15 @@ for (let i = 0; i < notas.length; i++) {
 let media= soma / notas.length;
 
 console.log (media); */
+
+// 🚀 Desafio 9:
+
+/* let idades= [15, 18, 22, 13, 30];
+
+let maior= idades[0];
+
+for (let i= 0; i < idades.length; i++) {
+    if (idades[i] > maior) {
+        maior= idades[i]
+    }
+} console.log (maior); */
