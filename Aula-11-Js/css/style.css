@@ -1,0 +1,88 @@
+*,*::before,*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    background-color: rgb(255, 166, 0);
+    padding: 20px;
+    margin: 0 0 20px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+h2 {
+    margin: 20px 0 15px 20px;
+    background-color: rgb(255, 166, 0, 0.70);
+    padding: 12px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+button {
+    background-color: rgb(224, 187, 22, 0.80);
+    padding: 8px 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0 0 0 10px;
+    font-weight: bold;
+    border-radius: 15px;
+    border: solid 1px rgb(224, 187, 22, 0.80);
+}
+
+input {
+    padding: 10px;
+    border-radius: 15px
+}
+
+img {
+    object-fit: cover;
+    width: 350px;
+    height: 200px;
+}
+
+.botão-alterar-titulo {
+    margin: 0 0 20px 20px;
+}
+
+.botão-mostrar-mensagem {
+    margin: 0 0 20px 20px;
+}
+
+.botão-mostrar-nome {
+    margin: 0 0 20px 20px;
+}
+
+.botão-mostrar-idade {
+    margin: 0 0 20px 20px;
+}
+
+.botão-mostrar-imagem {
+    display: flex;
+}
+
+.botão-mostrar-imagem button {
+    display: flex;
+    align-items: center;
+}
+
+.botão-mostrar-mensagem-secreta {
+    margin: 20px 0 20px 20px;
+}
+
+.botão-cria-elemento {
+    margin: 20px 0 20px 0;
+}
+
+.botão-remove-elemento {
+    margin: 20px 0 20px 0;
+}
+
+.botão-calculadora-IMC {
+    margin: 20px 0 20px 0;
+}
+
+.botão-lista-tarefas {
+    margin: 20px 0 20px 0;
+}

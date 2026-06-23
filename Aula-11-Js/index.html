@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech+</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h1 id="titulo">Olá, somos a Tech+</h1>
+
+    <!-- 9. Exemplo prático: Alterando título com botão -->
+
+    <h2>Alterando título com botão</h2>
+
+    <div class="botão-alterar-titulo">
+        <button onclick="alterarTitulo()">Clique aqui</button>
+    </div>
+
+    <div class="botão-mostrar-mensagem">
+        <button onclick="mostrarMensagem()">Mensagem</button>
+    </div>
+
+    <!-- 10. Capturando valores de campos input -->
+
+    <h2>Capturando valores de campos input</h2>
+
+    <div class="botão-mostrar-nome">
+        <input type="text" id="nome" placeholder="Digite seu nome">
+        <button onclick="mostrarNome ()">Mostrar nome</button>
+        <p id="resultado"></p>
+    </div>
+
+    <!-- 11. Exemplo prático: Verificando maioridade -->
+
+    <h2>Exemplo prático: Verificando maioridade</h2>
+
+    <div class="botão-mostrar-idade">
+        <input type="number" id="idade" placeholder="Informe a sua idade">
+        <button onclick="verificarIdade ()">Verificar</button>
+        <p id="resultadoIdade"></p>
+    </div>
+
+    <!-- 12. Alterando imagens com DOM -->
+
+    <h2>Alterando imagens com DOM</h2>
+
+    <div class="botão-mostrar-imagem">
+        <img id="imagem" src="img/imagem-tec.jpg" alt="Imagem de tecnologia" width="250">
+        <button onclick="trocarImagem ()">Trocar imagem</button>
+    </div>
+
+    <!-- 13. Mostrar e esconder elementos -->
+
+    <h2>Mostrar e esconder elementos</h2>
+
+    <div class="botão-mostrar-mensagem-secreta">
+        <p id="texto">Mensagem secreta</p>
+        <button onclick="esconderTexto ()">Esconder</button>
+        <button onclick="mostraTexto ()">Mostrar</button>
+    <div>
+
+    <!-- 14. Criando elementos com JavaScript -->
+
+    <h2>Criando elementos com JavaScript</h2>
+
+    <div class="botão-cria-elemento">
+        <div id="area"></div>
+        <button onclick="criarParagrafo ()">Criar parágrafo</button>
+    </div>
+
+    <!-- 15. Removendo elementos -->
+
+    <h2>Removendo elementos</h2>
+
+    <div class="botão-remove-elemento">
+        <p id="aviso">Esse texto será removido.</p>
+        <button onclick="removerAviso ()">Remover</button>
+    </div>
+
+    <!-- 16. Projeto prático: Calculadora de IMC -->
+
+    <h2>Projeto prático: Calculadora de IMC</h2>
+
+    <div class="botão-calculadora-IMC">    
+
+        <label>Peso:</label>
+        <input type="number" id="peso" placeholder="Ex: 70">
+
+        <br><br>
+
+        <label>Altura:</label>
+        <input type="number" id="altura" placeholder="Ex: 1.75" step="0.01">
+
+        <br><br>
+
+        <button onclick="calcularIMC ()">Calcular</button>
+
+        <p id="resultado-peso"></p>
+    </div>
+
+    <!-- 17. Projeto prático: Lista de tarefas simples -->
+
+    <h2>Projeto prático: Lista de tarefas simples</h2>
+
+    <div class="botão-lista-tarefas">
+        <input type="text" id="tarefa" placeholder="Digite uma tarefa">
+        <button onclick="adicionarTarefa ()">Adicionar</button>
+
+        <ul id="lista"></ul>
+    </div>
+
+    <script src="Js/script.js"></script>
+</body>
+
+</html>
