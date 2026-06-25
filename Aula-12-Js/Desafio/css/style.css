@@ -1,0 +1,115 @@
+*,*::before,*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor-principal: rgb(194, 165, 72);
+    --cor-secundaria: rgb(0, 0, 0);
+    --fonte: arial;
+    --sombra: 0 15px 25px rgba(0,0,0,.30);
+    --raio: 5px;
+    --cor-branca: rgb(255, 255, 255);
+}
+
+body {
+    font-family: var(--fonte);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-size: 16px;
+}
+
+main {
+    flex: 1;
+}
+
+header {
+    background-color: var(--cor-principal);
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 a {
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: var(--cor-secundaria);
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--cor-branca);
+    padding: 8px 16px;
+    font-weight: bolder;
+    border-radius: var(--raio);
+    transition: background .2s;
+}
+
+nav a:hover {
+    background: rgba(255,255,255,.15);
+}
+
+.subtítulo {
+    margin: 30px 20px;
+    font-size: 20px;
+}
+
+form {
+    margin: 30px;
+}
+
+fieldset {
+    padding: 20px 0 20px 15px;
+    border-radius: var(--raio);
+    box-shadow: var(--sombra);
+}
+
+label, input {
+    margin: 10px 0;
+}
+
+label {
+    font-size: 18px;
+    background-color: rgb(194, 165, 72, 0.5);
+    padding: 5px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+input {
+    padding: 6px;
+    border-radius: 10px;
+}
+
+legend {
+    background-color: var(--cor-principal);
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+button {
+    margin: 35px 0;
+    padding: 8px 16px;
+    border-radius: 15px;
+    background-color: var(--cor-principal);
+    color: var(--cor-secundaria);
+    font-weight: bold;
+    border: 1px solid var(--cor-principal);
+    box-shadow: var(--sombra);
+}
+
+footer {
+    background-color: var(--cor-secundaria);
+    padding: 40px;
+    color: var(--cor-branca);
+    text-align: center;
+}

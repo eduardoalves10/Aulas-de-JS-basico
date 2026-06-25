@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocaMais</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1><a href="index.html">LocaMais</a></h1>
+
+        <nav>
+            <a href="sobre.html">Sobre</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="subtítulo">
+            <h2>| Cadastramento de filmes:</h2>
+        </section>
+
+        <form>
+            <fieldset>
+                <legend>Cadastre seu filme favorito:</legend>
+                <div class="cadastro">
+                    <label for="nome-do-filme">Nome do filme:</label>
+                    <input type="text" id="nome-do-filme" placeholder="Ex: Vingadores" required minlength="1">
+                </div>  
+
+                <div class="cadastro">
+                    <label for="genero-do-filme">Gênero do filme:</label>
+                    <input type="text" id="genero-do-filme" placeholder="Ex: Ação" required minlength="4">
+                </div>
+                
+                <div class="cadastro">
+                    <label for="ano-de-lancamento">Ano de lançamento:</label>
+                    <input type="number" id="ano-de-lancamento" placeholder="Ex: 2019" required min="1990" max="2090">
+                </div>
+            </fieldset>
+
+            <div class="botão-cadastrar">
+                <button id="oi" onclick="cadastroFilme()">Cadastrar</button>
+            </div>
+
+        </form>
+
+        <ul id="lista"></ul>
+    </main>
+
+    <footer>
+        &copy; LocaMais - 2026
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
