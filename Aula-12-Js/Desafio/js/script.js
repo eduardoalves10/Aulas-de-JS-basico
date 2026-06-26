@@ -1,11 +1,3 @@
-let botao=
-document.getElementById ("botao");
-
-botao.addEventListener (
-    "click",
-    cadastroFilme
-)
-
 function cadastroFilme() {
     let filme= document.getElementById ("nome-do-filme").value;
     let genero= document.getElementById ("genero-do-filme").value;
