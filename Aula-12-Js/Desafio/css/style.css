@@ -179,13 +179,6 @@ ul li {
    margin: 0 0 0 40px; 
 }
 
-/* Lista da div Contato */
-
-.listas-contato {
-    background-color: rgb(194, 165, 72, 0.5);
-    border-radius: var(--raio);
-}
-
 /* Galeria de imagens de filmes */
 
 img {
@@ -237,7 +230,35 @@ img {
     font-size: 18px;
 }
 
-footer { /* rodapé do site  */
+/* seção do cadastro de filmes */
+
+.card {
+    background-color: rgb(194, 165, 72, 0.5);
+    border-radius: 15px;
+    box-shadow: var(--sombra);
+    padding: 25px;
+    margin: 20px;
+}
+
+.listas-contato {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.listas-contato p {
+    margin: 20px;
+}
+
+.listas-contato button {
+    display: flex;
+    margin: auto;
+} 
+
+/* rodapé do site  */
+
+footer { 
     background-color: var(--cor-secundaria);
     padding: 40px;
     color: var(--cor-branca);

@@ -3,31 +3,32 @@ function cadastroFilme() {
     let genero= document.getElementById ("genero-do-filme").value;
     let lancamento= document.getElementById("ano-de-lancamento").value;
 
-    let item = document.createElement("li");
-    item.innerText = filme;
-    document.getElementById("lista").appendChild(item);
+    if (filme === "" || genero === "" || lancamento === "") {
+        alert("Preencha todos so campos.")
+        return;
+    };
 
-    let item2 = document.createElement("li");
-    item2.innerText = genero;
-    document.getElementById("lista").appendChild(item2);
+    let card= document.createElement("div")
+    card.classList.add("card");
 
-    let item3 = document.createElement("li");
-    item3.innerText = lancamento;
-    document.getElementById("lista").appendChild(item3);
+    card.innerHTML = `
+        <p><strong>Nome do filme:</strong> ${filme}</p>
+        <p><strong>Gênero:</strong> ${genero}</p>
+        <p><strong>Ano de lançamento:</strong> ${lancamento}</p>
+    `;
 
     let botaoExcluir = document.createElement("button");
     botaoExcluir.innerText = "Excluir fime";
-
+    
     botaoExcluir.onclick = function() {
-        item.remove();
-        item2.remove();
-        item3.remove();
+        card.remove ();
     };
 
-    item.appendChild(botaoExcluir);
-    document.getElementById("lista").appendChild(item, item2, item3);
+    card.appendChild(botaoExcluir);
 
-    document.getElementById("filme").value= "";
-    document.getElementById("genero").value= "";
-    document.getElementById("lancamento").value= "";
+    document.getElementById("lista").appendChild(card);
+
+    document.getElementById("nome-do-filme").value= "";
+    document.getElementById("genero-do-filme").value= "";
+    document.getElementById("ano-de-lancamento").value= "";
 };
