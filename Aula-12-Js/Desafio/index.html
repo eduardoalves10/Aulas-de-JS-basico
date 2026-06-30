@@ -13,50 +13,109 @@
         <h1><a href="index.html">LocaMais</a></h1>
 
         <nav>
-            <a href="index.html">Início</a>
-            <a href="sobre.html">Sobre</a>
-            <a href="contato.html">Contato</a>
+            <a href="index.html"
+            rel="noopener"
+            class="ativo">
+            Início</a>
+            <a href="sobre.html"
+            rel="noopener">
+            Sobre</a>
+            <a href="contato.html"
+            rel="noopener">
+            Cadastro</a>
         </nav>
     </header>
 
     <main>
-        <section class="subtítulo">
-            <h2>| Cadastramento de filmes:</h2>
+        <section class="hero" id="hero">
+            <div class="texto-hero">
+                <h3>Os melhores filmes em um só lugar</h3>
+                <p>Alugue e compre filmes de todas as épocas</p>
+            </div>
         </section>
 
-        <form>
-            <fieldset>
-                <legend>Cadastre seu filme favorito:</legend>
-                <div class="cadastro">
-                    <label for="nome-do-filme">Nome do filme:</label>
-                    <input type="text" id="nome-do-filme" placeholder="Ex: Vingadores" required minlength="1">
-                </div>  
+        <section class="quem-somos">
+            <h2>| Quem somos?</h2>
+            <ul>
+                <li>Somos a locadora de filmes mais duradoura do mundo. Até hoje vendemos e alugamos filmes, trazendo aquela pintada de nostalgia e alegria para as pessoas que viveram a época dos CDs e DVDs, e trazendo de volta as memórias que as pessoas jamais vão esquecer!</li>
+            </ul>
+        </section>
+        
+        <h2>| Alguns de nossos filmes:</h2>
 
-                <div class="cadastro">
-                    <label for="genero-do-filme">Gênero do filme:</label>
-                    <input type="text" id="genero-do-filme" placeholder="Ex: Ação" required minlength="4">
-                </div>
-                
-                <div class="cadastro">
-                    <label for="ano-de-lancamento">Ano de lançamento:</label>
-                    <input type="number" id="ano-de-lancamento" placeholder="Ex: 2019" required min="1990" max="2090">
-                </div>
-            </fieldset>
+        <section class="galeria-de-filmes" id="galeria">
+            <figure>
+                <img src="imagens/carros.locamais.jpg" alt="Filme Carros"
+                height="180"
+                width="180"
+                loading="lazy">
+                <figcaption>Carros</figcaption>
+            </figure>
+            <figure>
+                <img src="imagens/vingadores-ultimato.locamais.jpg" alt="Filme Vingadores"
+                height="180"
+                width="180"
+                loading="lazy">
+                <figcaption>Vingadores</figcaption>
+            </figure>
+            <figure>
+                <img src="imagens/homem-aranha.locamais.jpg" alt="Filme Homem-aranha"
+                height="180"
+                width="180"
+                loading="lazy">
+                <figcaption>Homem-aranha</figcaption>
+            </figure>
+            <figure>
+                <img src="imagens/toy-story.locamais.webp" alt="Filme Toy story"
+                height="180"
+                width="180"
+                loading="lazy">
+                <figcaption>Toy Story</figcaption>
+            </figure>
+            <figure>
+                <img src="imagens/jurassic-park.locamais.jpg" alt="Filme Jurassic Park"
+                height="180"
+                width="180"
+                loading="lazy">
+                <figcaption>Jurassic Park</figcaption>
+            </figure>
+            <figure>
+                <img src="imagens/interestelar.locamais.jpg" alt="Filme Interestelar"
+                height="180"
+                width="180"
+                loading="lazy">
+                <figcaption>Interestelar</figcaption>
+            </figure>
+            <figure>
+                <img src="imagens/o-show-de-truman.locamais.jpg" alt="Filme O Show de Truman"
+                height="180"
+                width="180"
+                loading="lazy">
+                <figcaption>O Show de Truman</figcaption>
+            </figure>
+            <figure>
+                <img src="imagens/f1.locamais.webp" alt="Filme Fórmula 1"
+                height="180"
+                width="180"
+                loading="lazy">
+                <figcaption>Fórmula 1</figcaption>
+            </figure>
+        </section>
 
-            <div class="botão-cadastrar">
-                <button type="button" id="botão" onclick="cadastroFilme()">Cadastrar</button>
+        <section class="contato-loca-mais">
+            <h2>| Contato:</h2>
+            <div class="contato">
+                <p><strong>Telefone:</strong> (47) 9999-0000</p>
+                <p><strong>WhatsApp:</strong> (47) 99999-0000</p>
+                <p><strong>Email:</strong> locamais@gmail.com</p>
+                <p><strong>Localização:</strong> Rua .....</p>
             </div>
-
-        </form>
-
-        <ul id="lista"></ul>
+        </section>
     </main>
 
     <footer>
         &copy; LocaMais - 2026
     </footer>
-
-    <script src="js/script.js"></script>
 
 </body>
 </html>

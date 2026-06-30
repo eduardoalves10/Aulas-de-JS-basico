@@ -4,7 +4,9 @@
     padding: 0;
 }
 
-:root {
+/* Variáveis definidas */
+
+:root { 
     --cor-principal: rgb(194, 165, 72);
     --cor-secundaria: rgb(0, 0, 0);
     --fonte: arial;
@@ -13,7 +15,9 @@
     --cor-branca: rgb(255, 255, 255);
 }
 
-body {
+/* Corpo do site */
+
+body { 
     font-family: var(--fonte);
     display: flex;
     flex-direction: column;
@@ -21,9 +25,13 @@ body {
     font-size: 16px;
 }
 
+/* menu do site */
+
 main {
     flex: 1;
 }
+
+/* cabeçalho do site, incluindo a navegação (nav)*/
 
 header {
     background-color: var(--cor-principal);
@@ -39,6 +47,8 @@ h1 a {
     color: var(--cor-secundaria);
 }
 
+/* navegação (nav) */
+
 nav {
     display: flex;
 }
@@ -52,14 +62,18 @@ nav a {
     transition: background .2s;
 }
 
-nav a:hover {
+nav a:hover, nav a.ativo {
     background: rgba(255,255,255,.15);
 }
 
-.subtítulo {
-    margin: 30px 20px;
-    font-size: 20px;
+/* Estilo dos subtítulos */
+
+h2 {
+    margin: 45px 20px;
+    font-size: 25px;
 }
+
+/* Formulário de cadastro de filme */
 
 form {
     margin: 30px;
@@ -107,7 +121,121 @@ button {
     box-shadow: var(--sombra);
 }
 
-footer {
+/* seção do hero */
+
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(/Desafio/imagens/img.locamais.webp);
+    height: 400px;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.texto-hero {
+    background-color: rgb(255, 255, 255, 0.6);
+    border-radius: 15px;
+    padding: 15px;
+    margin: 10px 0;
+}
+
+.texto-hero h3 {
+    margin: 10px 0;
+    margin-bottom: 15px;
+    color: var(--cor-secundaria);
+}
+
+.texto-hero p {
+    margin: 10px 0;
+    color: var(--cor-secundaria);
+}
+
+/* Lista da seção Quem somos */
+
+.quem-somos ul li {
+    background-color: rgb(194, 165, 72, 0.5);
+    padding: 15px;
+    border-radius: var(--raio);
+    font-size: 18px;
+}
+
+/* Lista da seção Sobre */
+
+.sobre ul { /* Listas da seção Sobre  */
+    background-color: rgb(194, 165, 72, 0.5);
+    padding: 15px;
+    border-radius: var(--raio);
+    font-size: 18px;
+    margin: 0 20px;
+}
+
+/* estilo das listas não ordenadas  */
+
+ul li {
+   margin: 0 0 0 40px; 
+}
+
+/* Lista da div Contato */
+
+.listas-contato {
+    background-color: rgb(194, 165, 72, 0.5);
+    border-radius: var(--raio);
+}
+
+/* Galeria de imagens de filmes */
+
+img {
+    object-fit: cover;
+    width: 300px;
+    height: 400px;
+}
+
+.galeria-de-filmes {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 0 30px;
+}
+
+.galeria-de-filmes img {
+    border-radius: 5px 5px 0 0;
+    box-shadow: var(--sombra);
+    transition: transform .3s, opacity .3s;
+} 
+
+.galeria-de-filmes figcaption {
+    background-color: var(--cor-principal);
+    text-align: center;
+    font-weight: bold;
+    margin: -6px 0 0 0;
+    border-radius: var(--raio);
+    padding: 7px;
+}
+
+.galeria-de-filmes figure:hover img {
+    transform: scale(1.01);
+    opacity: .90;
+}
+
+/* Seção do Contato */
+
+.contato {
+    background-color: rgb(194, 165, 72, 0.5);
+    padding: 25px;
+    margin: 0 20px 60px 20px;
+    border-radius: var(--raio);
+}
+
+.contato p {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+footer { /* rodapé do site  */
     background-color: var(--cor-secundaria);
     padding: 40px;
     color: var(--cor-branca);

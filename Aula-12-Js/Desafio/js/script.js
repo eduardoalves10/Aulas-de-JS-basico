@@ -14,4 +14,20 @@ function cadastroFilme() {
     let item3 = document.createElement("li");
     item3.innerText = lancamento;
     document.getElementById("lista").appendChild(item3);
-}
+
+    let botaoExcluir = document.createElement("button");
+    botaoExcluir.innerText = "Excluir fime";
+
+    botaoExcluir.onclick = function() {
+        item.remove();
+        item2.remove();
+        item3.remove();
+    };
+
+    item.appendChild(botaoExcluir);
+    document.getElementById("lista").appendChild(item, item2, item3);
+
+    document.getElementById("filme").value= "";
+    document.getElementById("genero").value= "";
+    document.getElementById("lancamento").value= "";
+};
