@@ -9,7 +9,7 @@
 :root { 
     --cor-principal: rgb(194, 165, 72);
     --cor-secundaria: rgb(0, 0, 0);
-    --fonte: arial;
+    --fonte: "Stack Sans Text", sans-serif;;
     --sombra: 0 15px 25px rgba(0,0,0,.30);
     --raio: 5px;
     --cor-branca: rgb(255, 255, 255);
@@ -43,7 +43,7 @@ header {
 
 h1 a {
     text-decoration: none;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: var(--fonte);
     color: var(--cor-secundaria);
 }
 
@@ -71,7 +71,8 @@ nav a:hover, nav a.ativo {
 
 h2 {
     margin: 45px 20px;
-    font-size: 25px;
+    font-size: 40px;
+    text-align: center;
 }
 
 /* Formulário de cadastro de filme */
@@ -81,13 +82,15 @@ form {
 }
 
 fieldset {
+    margin: 30px;
     padding: 20px 0 20px 15px;
     border-radius: var(--raio);
     box-shadow: var(--sombra);
+    border: 0 solid;
 }
 
 label, input {
-    margin: 10px 0;
+    margin: 13px 15px;
 }
 
 label {
@@ -101,9 +104,12 @@ label {
 input {
     padding: 6px;
     border-radius: 10px;
+    border: 0 solid;
+    background-color: rgb(218, 214, 214);
 }
 
 legend {
+    text-align: center;
     background-color: var(--cor-principal);
     padding: 10px;
     border-radius: 10px;
