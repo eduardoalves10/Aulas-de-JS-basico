@@ -13,20 +13,21 @@
 <body>
 
     <header>
-        <div class="container">
+        <div class="container-header">
             <a class="titulo" href="index.html"><h1>LocaMais<h1></a>
 
             <nav>
                 <a href="index.html"
-                rel="noopener"
-                class="ativo">
+                rel="noopener">
                 Início</a>
                 <a href="sobre.html"
                 rel="noopener">
                 Sobre</a>
                 <a href="contato.html"
-                rel="noopener">
+                rel="noopener"
+                class="ativo">
                 Cadastro</a>
+            </nav>
         </div>
     </header>
 
@@ -35,29 +36,27 @@
             <h2>Cadastramento de filmes:</h2>
 
             <form>
-                <fieldset>
-                    <div class="cadastro">
-                        <label for="nome-do-filme">Nome do filme:</label>
-                        <input type="text" id="nome-do-filme" placeholder="Ex: Vingadores" required minlength="1">
-                    </div>  
+                <div class="cadastro">
+                    <label for="nome-do-filme">Nome do filme:</label>
+                    <input type="text" id="nome-do-filme" placeholder="Ex: Vingadores" required minlength="1">
+                </div>  
 
-                    <div class="cadastro">
-                        <label for="genero-do-filme">Gênero do filme:</label>
-                        <input type="text" id="genero-do-filme" placeholder="Ex: Ação" required minlength="4">
-                    </div>
+                <div class="cadastro">
+                    <label for="genero-do-filme">Gênero do filme:</label>
+                    <input type="text" id="genero-do-filme" placeholder="Ex: Ação" required minlength="4">
+                </div>
                 
-                    <div class="cadastro">
-                        <label for="ano-de-lancamento">Ano de lançamento:</label>
-                        <input type="number" id="ano-de-lancamento" placeholder="Ex: 2019" required min="1895" max="2026">
-                    </div>
-                </fieldset>
-
-                <div class="botão-cadastrar">
-                    <button type="button" id="botão" onclick="cadastroFilme()">Cadastrar filme</button>
+                <div class="cadastro">
+                    <label for="ano-de-lancamento">Ano de lançamento:</label>
+                    <input type="number" id="ano-de-lancamento" placeholder="Ex: 2019" required min="1895" max="2026">
                 </div>
 
-                <ul class="listas-contato" id="lista"></ul>
+                <div class="botão-cadastrar">
+                    <button class="enviar" type="button" id="botão" onclick="cadastroFilme()">Cadastrar filme</button>
+                </div>
             </form>
+
+            <div id="lista" class="lista-filmes"></div>
         </section>
     </main>
 
